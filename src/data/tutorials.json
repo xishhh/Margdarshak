@@ -1,0 +1,128 @@
+{
+  "tutorials": [
+    {
+      "id": "send-money",
+      "appId": "phonepe",
+      "title_en": "Send Money to a Friend",
+      "title_hi": "दोस्त को पैसे भेजें",
+      "safetyTip_en": "Only send money to people you know and trust.",
+      "safetyTip_hi": "पैसे सिर्फ उन्हीं लोगों को भेजें जिन्हें आप जानते और भरोसा करते हैं।",
+      "steps": [
+        {
+          "image": "/tutorials/phonepe-send-money-step-1.png",
+          "text_en": "Open the PhonePe app",
+          "text_hi": "फोनपे ऐप खोलें",
+          "voice_hi": "फोनपे ऐप खोलें।"
+        },
+        {
+          "image": "/tutorials/phonepe-send-money-step-2.png",
+          "text_en": "Tap on To Mobile Number",
+          "text_hi": "To Mobile Number पर टैप करें",
+          "voice_hi": "ऊपर दिख रहे 'टू मोबाइल नंबर' विकल्प पर टैप करें।"
+        },
+        {
+          "image": "/tutorials/phonepe-send-money-step-3.png",
+          "text_en": "Enter your friend's phone number",
+          "text_hi": "अपने दोस्त का फोन नंबर दर्ज करें",
+          "voice_hi": "अब अपने दोस्त का फोन नंबर यहाँ दर्ज करें।"
+        },
+        {
+          "image": "/tutorials/phonepe-send-money-step-4.png",
+          "text_en": "Select the saved contact",
+          "text_hi": "सेव किया हुआ कॉन्टैक्ट चुनें",
+          "voice_hi": "जो सेव किया हुआ कॉन्टैक्ट दिख रहा है, उस पर टैप करें।"
+        }
+      ]
+    },
+    {
+      "id": "book-ride",
+      "appId": "ola",
+      "title_en": "Book a Ride",
+      "title_hi": "राइड बुक करें",
+      "safetyTip_en": "Check the driver name and car number before getting in.",
+      "safetyTip_hi": "बैठने से पहले ड्राइवर का नाम और गाड़ी का नंबर जरूर देखें।",
+      "steps": [
+        {
+          "image": "/tutorials/ola-book-ride.svg",
+          "text_en": "Open Ola and allow location so the app can find your pickup point.",
+          "text_hi": "Ola खोलें और लोकेशन की अनुमति दें ताकि ऐप आपका पिकअप स्थान ढूंढ सके।"
+        },
+        {
+          "image": "/tutorials/ola-book-ride.svg",
+          "text_en": "Type where you want to go in the drop location box.",
+          "text_hi": "ड्रॉप लोकेशन बॉक्स में वह जगह लिखें जहाँ आपको जाना है।"
+        },
+        {
+          "image": "/tutorials/ola-book-ride.svg",
+          "text_en": "Pick a ride option that shows your preferred fare and wait time.",
+          "text_hi": "अपनी पसंद का किराया और समय देखकर राइड विकल्प चुनें।"
+        },
+        {
+          "image": "/tutorials/ola-book-ride.svg",
+          "text_en": "Tap Confirm Booking and wait for driver details.",
+          "text_hi": "Confirm Booking पर टैप करें और ड्राइवर की जानकारी का इंतजार करें।"
+        }
+      ]
+    },
+    {
+      "id": "place-order",
+      "appId": "amazon",
+      "title_en": "Place an Order",
+      "title_hi": "ऑर्डर करें",
+      "safetyTip_en": "Check the seller rating and final price before paying.",
+      "safetyTip_hi": "भुगतान से पहले seller rating और आखिरी कीमत जरूर देखें।",
+      "steps": [
+        {
+          "image": "/tutorials/amazon-place-order.svg",
+          "text_en": "Open Amazon and search for the item you want to buy.",
+          "text_hi": "Amazon खोलें और जिस चीज़ को खरीदना है उसे खोजें।"
+        },
+        {
+          "image": "/tutorials/amazon-place-order.svg",
+          "text_en": "Tap the product card to read price, delivery date, and reviews.",
+          "text_hi": "कीमत, डिलीवरी तारीख और reviews देखने के लिए product card खोलें।"
+        },
+        {
+          "image": "/tutorials/amazon-place-order.svg",
+          "text_en": "Tap Add to Cart or Buy Now if you are ready.",
+          "text_hi": "तैयार होने पर Add to Cart या Buy Now पर टैप करें।"
+        },
+        {
+          "image": "/tutorials/amazon-place-order.svg",
+          "text_en": "Confirm address and payment method, then place the order.",
+          "text_hi": "पता और भुगतान का तरीका जांचकर ऑर्डर पूरा करें।"
+        }
+      ]
+    },
+    {
+      "id": "order-groceries",
+      "appId": "blinkit",
+      "title_en": "Order Groceries",
+      "title_hi": "किराना मंगाएं",
+      "safetyTip_en": "Review the cart total before making payment.",
+      "safetyTip_hi": "भुगतान से पहले cart total जरूर जांचें।",
+      "steps": [
+        {
+          "image": "/tutorials/blinkit-order-groceries.svg",
+          "text_en": "Open Blinkit and confirm your delivery address.",
+          "text_hi": "Blinkit खोलें और अपना delivery address जांचें।"
+        },
+        {
+          "image": "/tutorials/blinkit-order-groceries.svg",
+          "text_en": "Search for groceries like milk, atta, or vegetables.",
+          "text_hi": "दूध, आटा या सब्ज़ियों जैसी चीज़ें खोजें।"
+        },
+        {
+          "image": "/tutorials/blinkit-order-groceries.svg",
+          "text_en": "Tap Add on the items you want and review your cart.",
+          "text_hi": "जो चीज़ें चाहिए उन पर Add करें और cart देखें।"
+        },
+        {
+          "image": "/tutorials/blinkit-order-groceries.svg",
+          "text_en": "Tap Place Order and select your payment method.",
+          "text_hi": "Place Order पर टैप करें और भुगतान का तरीका चुनें।"
+        }
+      ]
+    }
+  ]
+}

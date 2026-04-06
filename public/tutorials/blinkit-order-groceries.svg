@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1120" viewBox="0 0 720 1120" fill="none">
+  <rect width="720" height="1120" rx="56" fill="#f6fff4"/>
+  <rect width="720" height="180" fill="#0f5132"/>
+  <text x="54" y="122" fill="#ffffff" font-size="52" font-family="Arial" font-weight="700">Blinkit</text>
+  <rect x="54" y="240" width="612" height="110" rx="28" fill="#ffffff"/>
+  <text x="96" y="308" fill="#5b6470" font-size="32" font-family="Arial">Search groceries</text>
+  <rect x="54" y="402" width="612" height="190" rx="34" fill="#ffffff"/>
+  <rect x="82" y="438" width="118" height="118" rx="22" fill="#fff0a8"/>
+  <rect x="228" y="444" width="168" height="28" rx="10" fill="#1f2937"/>
+  <rect x="228" y="496" width="120" height="22" rx="10" fill="#667085"/>
+  <rect x="524" y="448" width="104" height="72" rx="20" fill="#496455"/>
+  <text x="554" y="493" fill="#ffffff" font-size="30" font-family="Arial" font-weight="700">Add</text>
+  <rect x="54" y="636" width="612" height="300" rx="34" fill="#ffffff"/>
+  <text x="86" y="704" fill="#1f2937" font-size="42" font-family="Arial" font-weight="700">Cart Total</text>
+  <text x="520" y="704" fill="#0f5132" font-size="44" font-family="Arial" font-weight="700">₹420</text>
+  <rect x="86" y="804" width="548" height="108" rx="34" fill="#496455"/>
+  <text x="222" y="872" fill="#ffffff" font-size="40" font-family="Arial" font-weight="700">Place Order</text>
+</svg>
