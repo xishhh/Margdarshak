@@ -47,7 +47,7 @@
   }
 
   .icon-button {
-    @apply flex h-12 w-12 items-center justify-center rounded-full text-on-surface transition duration-300 active:scale-95;
+    @apply flex h-12 w-12 items-center justify-center rounded-2xl text-on-surface transition duration-300 active:scale-95;
   }
 
   .surface-card {

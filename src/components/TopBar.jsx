@@ -15,7 +15,7 @@ export default function TopBar({ title = 'Margdarshak', showBack = true, showHom
           ) : (
             <div className="h-12 w-12" />
           )}
-          <h1 className="text-[1.7rem] font-bold tracking-tight">{title}</h1>
+          {title ? <h1 className="text-[1.5rem] font-bold tracking-tight md:text-[1.6rem]">{title}</h1> : null}
         </div>
 
         <div className="flex items-center gap-2">

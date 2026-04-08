@@ -103,24 +103,116 @@
       "safetyTip_hi": "भुगतान से पहले cart total जरूर जांचें।",
       "steps": [
         {
-          "image": "/tutorials/blinkit-order-groceries.svg",
-          "text_en": "Open Blinkit and confirm your delivery address.",
-          "text_hi": "Blinkit खोलें और अपना delivery address जांचें।"
+          "mediaType": "video",
+          "media": "/tutorials/blinkit/blinkit-order-groceries-step-1.mp4",
+          "text_en": "Open the Blinkit app to begin your order.",
+          "text_hi": "ऑर्डर शुरू करने के लिए ब्लिंकिट ऐप खोलें।",
+          "voice_en": "Open the Blinkit app to begin your order.",
+          "voice_hi": "ऑर्डर शुरू करने के लिए ब्लिंकिट ऐप खोलें।"
         },
         {
-          "image": "/tutorials/blinkit-order-groceries.svg",
-          "text_en": "Search for groceries like milk, atta, or vegetables.",
-          "text_hi": "दूध, आटा या सब्ज़ियों जैसी चीज़ें खोजें।"
+          "mediaType": "image",
+          "media": "/tutorials/blinkit/blinkit-order-groceries-step-2.jpeg",
+          "text_en": "Use the search bar to enter the name of the product you want.",
+          "text_hi": "जिस सामान की ज़रूरत है, उसका नाम सर्च बार में लिखें।",
+          "voice_en": "Use the search bar to enter the name of the product you want.",
+          "voice_hi": "जिस सामान की ज़रूरत है, उसका नाम सर्च बार में लिखें।"
         },
         {
-          "image": "/tutorials/blinkit-order-groceries.svg",
-          "text_en": "Tap Add on the items you want and review your cart.",
-          "text_hi": "जो चीज़ें चाहिए उन पर Add करें और cart देखें।"
+          "mediaType": "image",
+          "media": "/tutorials/blinkit/blinkit-order-groceries-step-3.jpeg",
+          "text_en": "Select the bread you would like and add it to the cart.",
+          "text_hi": "जो ब्रेड आपको चाहिए, उसे चुनकर कार्ट में जोड़ें।",
+          "voice_en": "Select the bread you would like and add it to the cart.",
+          "voice_hi": "जो ब्रेड आपको चाहिए, उसे चुनकर कार्ट में जोड़ें।"
         },
         {
-          "image": "/tutorials/blinkit-order-groceries.svg",
-          "text_en": "Tap Place Order and select your payment method.",
-          "text_hi": "Place Order पर टैप करें और भुगतान का तरीका चुनें।"
+          "mediaType": "video",
+          "media": "/tutorials/blinkit/blinkit-order-groceries-step-4.mp4",
+          "text_en": "This example shows how to search for bread and add it to the cart.",
+          "text_hi": "इस उदाहरण में देखें कि ब्रेड सर्च करके कार्ट में कैसे जोड़ी जाती है।",
+          "voice_en": "This example shows how to search for bread and add it to the cart.",
+          "voice_hi": "इस उदाहरण में देखें कि ब्रेड सर्च करके कार्ट में कैसे जोड़ी जाती है।"
+        },
+        {
+          "mediaType": "image",
+          "media": "/tutorials/blinkit/blinkit-order-groceries-step-5.jpeg",
+          "text_en": "To add more items, clear the search, type the next product, and tap Add",
+          "text_hi": "और सामान जोड़ने के लिए, पुराना नाम हटाएँ, नया सामान लिखें और Add पर टैप करें",
+          "voice_en": "To add more items, clear the search, type the next product, and tap Add.",
+          "voice_hi": "और सामान जोड़ने के लिए, पुराना नाम हटाएँ, नया सामान लिखें और Add पर टैप करें।"
+        },
+        {
+          "mediaType": "image",
+          "media": "/tutorials/blinkit/blinkit-order-groceries-step-6.jpeg",
+          "text_en": "Once your items are added, open View Cart.",
+          "text_hi": "सामान जुड़ जाने के बाद View Cart खोलें।",
+          "voice_en": "Once your items are added, open View Cart.",
+          "voice_hi": "सामान जुड़ जाने के बाद View Cart खोलें।"
+        },
+        {
+          "mediaType": "video",
+          "media": "/tutorials/blinkit/blinkit-order-groceries-step-7.mp4",
+          "text_en": "This clip shows how to open the cart.",
+          "text_hi": "इस क्लिप में देखें कि कार्ट कैसे खोला जाता है।",
+          "voice_en": "This clip shows how to open the cart.",
+          "voice_hi": "इस क्लिप में देखें कि कार्ट कैसे खोला जाता है।"
+        },
+        {
+          "mediaType": "image",
+          "media": "/tutorials/blinkit/blinkit-order-groceries-step-8.jpeg",
+          "text_en": "Take a moment to confirm that all selected items are in the cart.",
+          "text_hi": "एक बार देख लें कि आपके चुने हुए सभी सामान कार्ट में हैं।",
+          "voice_en": "Take a moment to confirm that all selected items are in the cart.",
+          "voice_hi": "एक बार देख लें कि आपके चुने हुए सभी सामान कार्ट में हैं।"
+        },
+        {
+          "mediaType": "video",
+          "media": "/tutorials/blinkit/blinkit-order-groceries-step-9.mp4",
+          "text_en": "Scroll down to review the bill details.",
+          "text_hi": "बिल की जानकारी देखने के लिए नीचे जाएँ।",
+          "voice_en": "Scroll down to review the bill details.",
+          "voice_hi": "बिल की जानकारी देखने के लिए नीचे जाएँ।"
+        },
+        {
+          "mediaType": "image",
+          "media": "/tutorials/blinkit/blinkit-order-groceries-step-10.jpeg",
+          "text_en": "Review the total amount and other charges carefully.",
+          "text_hi": "कुल रकम और बाकी चार्ज ध्यान से देख लें।",
+          "voice_en": "Review the total amount and other charges carefully.",
+          "voice_hi": "कुल रकम और बाकी चार्ज ध्यान से देख लें।"
+        },
+        {
+          "mediaType": "image",
+          "media": "/tutorials/blinkit/blinkit-order-groceries-step-11.jpeg",
+          "text_en": "Choose the payment method you would like to use.",
+          "text_hi": "अपनी पसंद का पेमेंट तरीका चुनें।",
+          "voice_en": "Choose the payment method you would like to use.",
+          "voice_hi": "अपनी पसंद का पेमेंट तरीका चुनें।"
+        },
+        {
+          "mediaType": "image",
+          "media": "/tutorials/blinkit/blinkit-order-groceries-step-12.jpeg",
+          "text_en": "Scroll down until you see Cash on Delivery.",
+          "text_hi": "नीचे जाएँ, जहाँ Cash on Delivery दिखे।",
+          "voice_en": "Scroll down until you see Cash on Delivery.",
+          "voice_hi": "नीचे जाएँ, जहाँ Cash on Delivery दिखे।"
+        },
+        {
+          "mediaType": "video",
+          "media": "/tutorials/blinkit/blinkit-order-groceries-step-13.mp4",
+          "text_en": "This clip shows where to find Cash on Delivery.",
+          "text_hi": "इस क्लिप में देखें कि Cash on Delivery कहाँ मिलता है।",
+          "voice_en": "This clip shows where to find Cash on Delivery.",
+          "voice_hi": "इस क्लिप में देखें कि Cash on Delivery कहाँ मिलता है।"
+        },
+        {
+          "mediaType": "image",
+          "media": "/tutorials/blinkit/blinkit-order-groceries-step-14.jpeg",
+          "text_en": "Select the payment option and continue with Place Order.",
+          "text_hi": "पेमेंट विकल्प चुनकर Place Order पर आगे बढ़ें।",
+          "voice_en": "Select the payment option and continue with Place Order.",
+          "voice_hi": "पेमेंट विकल्प चुनकर Place Order पर आगे बढ़ें।"
         }
       ]
     }

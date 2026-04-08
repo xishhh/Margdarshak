@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import BottomNav from '../components/BottomNav';
 import Icon from '../components/Icon';
@@ -8,6 +8,7 @@ import TutorialStepCard from '../components/TutorialStepCard';
 import VoiceButton from '../components/VoiceButton';
 import { tutorials } from '../data/content';
 import { useAppContext } from '../hooks/useAppContext';
+import { useSpeech } from '../hooks/useSpeech';
 
 export default function TutorialPage() {
   const { appId, tutorialId } = useParams();
@@ -18,6 +19,7 @@ export default function TutorialPage() {
   );
   const [stepIndex, setStepIndex] = useState(0);
   const contentRef = useRef(null);
+  const { speak, stop, speaking, supported, voiceCount } = useSpeech();
 
   if (!tutorial) {
     return null;
@@ -34,25 +36,25 @@ export default function TutorialPage() {
       : currentStep.voice_en || currentStep.text_en;
   const safetyTip = language === 'hi' ? tutorial.safetyTip_hi : tutorial.safetyTip_en;
   const progress = ((stepIndex + 1) / totalSteps) * 100;
-
-  useEffect(() => {
-    contentRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, [stepIndex]);
+  const mediaType = currentStep.mediaType || (currentStep.video ? 'video' : 'image');
+  const mediaSrc = currentStep.media || currentStep.video || currentStep.image;
 
   const goToPreviousStep = () => {
+    stop();
     setStepIndex((index) => Math.max(index - 1, 0));
   };
 
   const goToNextStep = () => {
+    stop();
     setStepIndex((index) => Math.min(index + 1, totalSteps - 1));
   };
 
   return (
     <>
-      <TopBar rightSlot={<LanguageToggle compact />} />
+      <TopBar title="" rightSlot={<LanguageToggle compact />} />
       <main ref={contentRef} className="app-shell pb-40 md:pb-44">
         <section className="mt-2">
-          <h2 className="editorial-title text-[2.6rem]">{title}</h2>
+          <h2 className="editorial-title text-[2.25rem] md:text-[2.45rem]">{title}</h2>
           <div className="mt-4 flex items-center gap-3">
             <div className="h-3 flex-1 overflow-hidden rounded-full bg-surface-container">
               <div className="h-full rounded-full bg-primary" style={{ width: `${progress}%` }} />
@@ -63,8 +65,28 @@ export default function TutorialPage() {
 
         <section className="mt-5 grid gap-4 md:mt-7 md:gap-6 md:grid-cols-[minmax(0,1fr)_320px] md:items-start">
           <div className="space-y-4">
-            <TutorialStepCard image={currentStep.image} text={stepText} stepLabel={stepLabel} totalLabel={stepLabel} />
-            <VoiceButton text={voiceText} />
+            <TutorialStepCard
+              mediaSrc={mediaSrc}
+              mediaType={mediaType}
+              text={stepText}
+              stepLabel={stepLabel}
+              totalLabel={stepLabel}
+              headerAction={<VoiceButton onSpeak={() => speak(voiceText, language)} onStop={stop} speaking={speaking} disabled={!supported} />}
+            />
+
+            {!supported ? (
+              <p className="rounded-2xl bg-error-container px-4 py-3 text-sm font-medium text-on-error-container">
+                {language === 'hi'
+                  ? 'इस ब्राउज़र में आवाज़ सहायता उपलब्ध नहीं है। कृपया Chrome में खोलकर दोबारा देखें।'
+                  : 'Voice guidance is not available in this browser. Please try opening the app in Chrome.'}
+              </p>
+            ) : voiceCount === 0 ? (
+              <p className="rounded-2xl bg-surface-container-low px-4 py-3 text-sm font-medium text-on-surface-variant">
+                {language === 'hi'
+                  ? 'आवाज़ लोड हो रही है। अगर आवाज़ न आए तो पेज एक बार रिफ्रेश करें।'
+                  : 'Voices are still loading. If you do not hear audio, refresh the page once.'}
+              </p>
+            ) : null}
 
             <div className="rounded-[1.75rem] border border-amber-300 bg-amber-50 px-5 py-4 text-base font-semibold text-amber-900">
               <span className="flex items-center gap-2">
